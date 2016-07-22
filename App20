@@ -1,0 +1,42 @@
+class Robot {
+	public void speak(String text) {
+		System.out.println(text);
+	}
+	
+	public void jump(int height) {
+		System.out.println("Jumping: " + height +"m");
+	}
+	
+	public void move(String direction, double distance) {
+		System.out.println("Moving " + distance + " meters in direction " + direction);
+	}
+}
+
+
+public class App {
+
+	public static void main(String[] args) {
+		Robot sam = new Robot();
+		sam.speak("Hi I am Sam.");
+		sam.jump(100);
+		sam.move("North", 15.7);
+		
+		String greeting = "My name is Chicken!";
+		
+		sam.speak(greeting);
+		
+		int value = 126;
+		
+		sam.jump(value);
+		
+		String dir = "East";
+		double dist = 122.45;
+		
+		sam.move(dir, dist);
+		
+		
+		
+
+	}
+
+}
